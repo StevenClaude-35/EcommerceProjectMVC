@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace eTicketAPP.Controllers.Data.Enums
+namespace eTicketAPP.Data
 {
+   
     public enum MovieCategory
     {
         Action = 1,
@@ -15,4 +16,3 @@ namespace eTicketAPP.Controllers.Data.Enums
         Horror
     }
 }
-

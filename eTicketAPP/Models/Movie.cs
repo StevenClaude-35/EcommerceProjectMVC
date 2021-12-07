@@ -1,15 +1,17 @@
-﻿using eTicketAPP.Controllers.Data.Enums;
+﻿using eTicketAPP.Data;
+using eTicketAPP.Data.Base;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace eTicketAPP.Models
 {
-    public class Movie
+    public class Movie:IEntityBase
     {
-
+        [Key]
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
